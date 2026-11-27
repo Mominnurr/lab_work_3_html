@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Tables</h1>
+    <p>Learn how to organize information in tables</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="metadata.html">Metadata</a>
+    <a href="text.html">Text</a>
+    <a href="links.html">Links</a>
+    <a href="lists.html">Lists</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="media.html">Media</a>
+    <a href="semantic.html">Semantic</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>1. What are HTML Tables?</h2>
+
+        <p>
+            HTML tables are used to display information
+            in rows and columns. They are useful for
+            showing student marks, prices and other data.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>2. Main Table Tags</h2>
+
+        <ul>
+            <li>&lt;table&gt; - creates a table.</li>
+            <li>&lt;tr&gt; - creates a table row.</li>
+            <li>&lt;th&gt; - creates a heading cell.</li>
+            <li>&lt;td&gt; - creates a normal data cell.</li>
+            <li>&lt;caption&gt; - gives a title to the table.</li>
+            <li>&lt;thead&gt; - groups the heading rows.</li>
+            <li>&lt;tbody&gt; - groups the main table content.</li>
+            <li>&lt;tfoot&gt; - groups the footer rows.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>3. Simple HTML Table</h2>
+
+        <p>Here is an example of a student information table.</p>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+
+            <tr>
+                <td>Ali</td>
+                <td>20</td>
+                <td>IT</td>
+            </tr>
+
+            <tr>
+                <td>Madina</td>
+                <td>19</td>
+                <td>Computer Science</td>
+            </tr>
+
+            <tr>
+                <td>John</td>
+                <td>21</td>
+                <td>Software Engineering</td>
+            </tr>
+        </table>
+
+        <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Ali&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>4. Table Attributes</h2>
+
+        <p>Some important table cell attributes are:</p>
+
+        <ul>
+            <li>colspan - makes a cell cover multiple columns.</li>
+            <li>rowspan - makes a cell cover multiple rows.</li>
+        </ul>
+
+        <h3>Colspan Example</h3>
+
+        <table border="1">
+            <tr>
+                <th colspan="2">Student Details</th>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>Ali</td>
+            </tr>
+        </table>
+
+        <pre>
+&lt;th colspan="2"&gt;Student Details&lt;/th&gt;
+        </pre>
+
+
+        <h3>Rowspan Example</h3>
+
+        <table border="1">
+            <tr>
+                <th rowspan="2">IT</th>
+                <td>HTML</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+            </tr>
+        </table>
+
+        <pre>
+&lt;th rowspan="2"&gt;IT&lt;/th&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>5. Table with Caption</h2>
+
+        <table border="1">
+            <caption>My Favourite Subjects</caption>
+
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Easy</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Medium</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Hard</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>6. Why are Tables Useful?</h2>
+
+        <ul>
+            <li>To organize information.</li>
+            <li>To show student results.</li>
+            <li>To display prices.</li>
+            <li>To compare different items.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>HTML Review Website | Tables</p>
+</footer>
+
+</body>
+</html>
