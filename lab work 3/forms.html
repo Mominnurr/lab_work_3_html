@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Forms</h1>
+    <p>Learn how to collect information from users</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="metadata.html">Metadata</a>
+    <a href="text.html">Text</a>
+    <a href="links.html">Links</a>
+    <a href="lists.html">Lists</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="media.html">Media</a>
+    <a href="semantic.html">Semantic</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>1. What are HTML Forms?</h2>
+
+        <p>
+            HTML forms are used to collect information
+            from website visitors. For example, a website
+            can ask for a name, email and password.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>2. Form Tag</h2>
+
+        <p>
+            The &lt;form&gt; tag is used to create a form.
+            It contains different input fields and buttons.
+        </p>
+
+        <pre>
+&lt;form&gt;
+    Form elements go here
+&lt;/form&gt;
+        </pre>
+
+        <p><b>Important attributes:</b></p>
+
+        <ul>
+            <li>action - specifies where form data is sent.</li>
+            <li>method - specifies how data is sent (GET or POST).</li>
+            <li>target - specifies where the response opens.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>3. Text Input</h2>
+
+        <p>The input type text is used to enter a name or other text.</p>
+
+        <label>Enter your name:</label>
+        <input type="text" placeholder="Your name">
+
+        <pre>
+&lt;input type="text" placeholder="Your name"&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>4. Email Input</h2>
+
+        <p>Email input is used to enter an email address.</p>
+
+        <label>Enter your email:</label>
+        <input type="email" placeholder="example@gmail.com">
+
+        <pre>
+&lt;input type="email" placeholder="example@gmail.com"&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>5. Password Input</h2>
+
+        <p>Password input hides the characters typed by the user.</p>
+
+        <label>Enter password:</label>
+        <input type="password" placeholder="Enter password">
+
+        <pre>
+&lt;input type="password" placeholder="Enter password"&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>6. Radio Buttons</h2>
+
+        <p>Radio buttons allow users to choose one option from a group.</p>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <pre>
+&lt;input type="radio" name="gender"&gt; Male
+&lt;input type="radio" name="gender"&gt; Female
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>7. Checkboxes</h2>
+
+        <p>Checkboxes allow users to select multiple options.</p>
+
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+
+        <pre>
+&lt;input type="checkbox"&gt; HTML
+&lt;input type="checkbox"&gt; CSS
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>8. Select Dropdown</h2>
+
+        <p>The select tag creates a dropdown menu.</p>
+
+        <select>
+            <option>Select your course</option>
+            <option>Information Technology</option>
+            <option>Computer Science</option>
+            <option>Software Engineering</option>
+        </select>
+
+        <pre>
+&lt;select&gt;
+    &lt;option&gt;HTML&lt;/option&gt;
+    &lt;option&gt;CSS&lt;/option&gt;
+&lt;/select&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>9. Textarea</h2>
+
+        <p>Textarea is used for longer messages or comments.</p>
+
+        <textarea rows="4" cols="40" placeholder="Write your message"></textarea>
+
+        <pre>
+&lt;textarea rows="4" cols="40"&gt;
+&lt;/textarea&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>10. Submit Button</h2>
+
+        <p>The submit button sends form information.</p>
+
+        <button type="button">Submit Example</button>
+
+        <pre>
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+        </pre>
+    </section>
+
+
+    <section>
+        <h2>11. Complete Registration Form Example</h2>
+
+        <form action="#" method="get">
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password"><br><br>
+
+            <label>Choose Course:</label><br>
+
+            <select name="course">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+
+            <br><br>
+
+            <label>Message:</label><br>
+            <textarea name="message" rows="4"></textarea>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>HTML Review Website | Forms</p>
+</footer>
+
+</body>
+</html>

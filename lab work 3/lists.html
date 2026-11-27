@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lists</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Lists</h1>
+    <p>Learn how to organize information using lists</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="metadata.html">Metadata</a>
+    <a href="text.html">Text</a>
+    <a href="links.html">Links</a>
+    <a href="lists.html">Lists</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="media.html">Media</a>
+    <a href="semantic.html">Semantic</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>1. What are HTML Lists?</h2>
+
+        <p>
+            HTML lists are used to display information
+            in an organized way. We can use lists for
+            names, steps, items and many other things.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>2. Ordered List</h2>
+
+        <p>
+            The &lt;ol&gt; tag creates a numbered list.
+            Each item is written using the &lt;li&gt; tag.
+        </p>
+
+        <h3>Example:</h3>
+
+        <ol>
+            <li>Open Visual Studio Code</li>
+            <li>Create an HTML file</li>
+            <li>Write HTML code</li>
+            <li>Save the file</li>
+        </ol>
+
+        <pre>
+&lt;ol&gt;
+    &lt;li&gt;Open VS Code&lt;/li&gt;
+    &lt;li&gt;Create HTML file&lt;/li&gt;
+    &lt;li&gt;Write code&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+
+        <p><b>Attributes:</b></p>
+        <ul>
+            <li>type - changes the numbering style (1, A, a, I, i).</li>
+            <li>start - sets the starting number.</li>
+            <li>reversed - makes the numbering go backwards.</li>
+        </ul>
+
+        <h3>Different numbering:</h3>
+
+        <ol type="A">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ol>
+    </section>
+
+
+    <section>
+        <h2>3. Unordered List</h2>
+
+        <p>
+            The &lt;ul&gt; tag creates a list with bullet points.
+        </p>
+
+        <h3>Example:</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+        </ul>
+
+        <pre>
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+
+        <p><b>Attributes:</b></p>
+        <p>
+            The type attribute was used in older HTML to change
+            bullet styles. Today, CSS list-style-type is preferred.
+        </p>
+
+        <h3>Example with CSS-style bullets:</h3>
+
+        <ul style="list-style-type: square;">
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Green</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>4. Description List</h2>
+
+        <p>
+            The &lt;dl&gt; tag creates a description list.
+            The &lt;dt&gt; tag gives the term and
+            the &lt;dd&gt; tag gives its description.
+        </p>
+
+        <h3>Example:</h3>
+
+        <dl>
+            <dt><b>HTML</b></dt>
+            <dd>Language used to create web pages.</dd>
+
+            <dt><b>CSS</b></dt>
+            <dd>Language used to style web pages.</dd>
+
+            <dt><b>JavaScript</b></dt>
+            <dd>Language used to add interactivity.</dd>
+        </dl>
+
+        <pre>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Creates web pages&lt;/dd&gt;
+
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Styles web pages&lt;/dd&gt;
+&lt;/dl&gt;
+        </pre>
+
+        <p><b>Attributes:</b> Global attributes like id and class.</p>
+    </section>
+
+
+    <section>
+        <h2>5. Nested Lists</h2>
+
+        <p>
+            A nested list is a list inside another list.
+        </p>
+
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </li>
+
+            <li>Programming
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+        </ul>
+
+        <pre>
+&lt;ul&gt;
+    &lt;li&gt;Frontend
+        &lt;ul&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;CSS&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+    </section>
+
+</main>
+
+<footer>
+    <p>HTML Review Website | Lists</p>
+</footer>
+
+</body>
+</html>
